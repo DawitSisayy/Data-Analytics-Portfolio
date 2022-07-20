@@ -105,3 +105,34 @@ LINES TERMINATED BY '\n'
 IGNORE 1 LINES;
 
 ```
+5. Select the top 20 rows of the deliveries table.
+```
+SELECT * FROM deliveries
+LIMIT 20;
+```
+6. Select the top 20 rows of the matches table.
+```
+SELECT * FROM matches
+LIMIT 20;
+```
+7. Fetch data of all the matches played on 2nd May 2013.
+```
+SELECT * FROM matches
+WHERE date = '2013-05-02';
+```
+8. Fetch data of all the matches where the margin of victory is more than 100 runs.
+```
+SELECT * FROM matches
+WHERE result_margin > 100;
+```
+9. Fetch data of all the matches where the final scores of both teams are tied and order it in descending order of the date.
+```
+SELECT * FROM matches
+WHERE result = 'tie'
+ORDER BY date DESC;
+```
+10. Get the count of cities that have hosted an IPL match.
+```
+SELECT COUNT(DISTINCT city) 
+FROM matches;
+```
