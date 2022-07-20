@@ -76,7 +76,7 @@ CREATE TABLE deliveries (
 3. Import data from CSV file ’IPL_matches.csv’ attached in resources to ‘matches’
 
 Here, data cleaning should be performed first. The date format should be similar and I prefer it to be in yyyy-mm-dd format. 
-To change the date format to yyyy-mm-dd: right cick > Format cells > Number > Date > selecting 'yyyy-mm-dd' format > Ok. And save te file.
+To change the date format to yyyy-mm-dd: right cick > Format cells > Number > Date > selecting 'yyyy-mm-dd' format > Ok. And save the file.
 Since the file is too large to load into mysql, its better to use "load data infile" command
 loading 'IPL_matches.csv'.
 
@@ -94,3 +94,14 @@ IGNORE 1 LINES
 The variable `secure_file_priv` is used to limit the effect of data import and export operations. 
 To see the current folder for upload, Just execute the below command after login in to your MySQL command line.
 ` SHOW VARIABLES LIKE "secure_file_priv";`
+
+4. Import data from CSV file ’IPL_Ball.csv’ attached in resources to ‘deliveries’
+```
+LOAD DATA INFILE 'D:/!. Azub learning/1. Start tech internship/Task 2/sql scripts/IPL_Ball.csv' INTO TABLE deliveries
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+ESCAPED BY '\\'
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES;
+
+```
