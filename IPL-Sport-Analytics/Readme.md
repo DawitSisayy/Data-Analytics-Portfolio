@@ -71,3 +71,4 @@ Then start using the database created to perform the SQL queries:
 		`bowling_team` VARCHAR(40),
 		 FOREIGN KEY(id) REFERENCES matches(id)
 	);```
+
