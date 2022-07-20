@@ -18,4 +18,5 @@ between the years 2008 and 2020. It has 17 columns. The second file ("IPL_matche
 
 ### Required tasks
 The first step before solving the problem is to create a database in MySQL workbench
-`CREATE DATABASE ipl;`
+
+`CREATE DATABASE ipldb;`
