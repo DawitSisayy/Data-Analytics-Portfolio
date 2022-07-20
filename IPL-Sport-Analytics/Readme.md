@@ -29,7 +29,7 @@ Then start using the database created to perform the SQL queries:
 
 1. Create a table named ‘matches’ with appropriate data types for columns
 
-	```CREATE TABLE matches(
+	      ```CREATE TABLE matches(
 			id INT PRIMARY KEY,
 			city VARCHAR(40),
 			date DATE,
