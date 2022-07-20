@@ -29,7 +29,7 @@ Then start using the database created to perform the SQL queries:
 
 1. Create a table named ‘matches’ with appropriate data types for columns
 
-`CREATE TABLE matches(
+```CREATE TABLE matches(
     id INT PRIMARY KEY,
     city VARCHAR(40),
     date DATE,
@@ -47,7 +47,7 @@ Then start using the database created to perform the SQL queries:
     method VARCHAR(10),
     umpire1 VARCHAR(40),
     umpire2 VARCHAR(40)
-); `
+); ```
 
 3. Create a table named ‘deliveries’ with appropriate data types for columns
 
