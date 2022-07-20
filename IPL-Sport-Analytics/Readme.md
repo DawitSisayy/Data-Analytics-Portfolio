@@ -23,6 +23,6 @@ The first step before solving the problem is to create a database in MySQL workb
 
 Then start using the database created to perform the SQL queries:
 
-.Using the database
+..* Using the database
 
 `use ipldb; `
