@@ -49,7 +49,7 @@ Then start using the database created to perform the SQL queries:
     umpire2 VARCHAR(40)
 );```
 
-3. Create a table named ‘deliveries’ with appropriate data types for columns
+2. Create a table named ‘deliveries’ with appropriate data types for columns
 
 3. Import data from CSV file ’IPL_matches.csv’ attached in resources to ‘matches’
 
