@@ -17,3 +17,5 @@ The first CSV file ("IPL_Ball.csv")  is for ball-by-ball data and it has informa
 between the years 2008 and 2020. It has 17 columns. The second file ("IPL_matches.csv") contains match-wise data and has data of 816 IPL matches. This table has also 17 columns. 
 
 ### Required tasks
+The first step before solving the problem is to create a database in MySQL workbench
+`CREATE DATABASE ipl;`
