@@ -79,7 +79,9 @@ Here, data cleaning should be performed first. The date format should be similar
 To change the date format to yyyy-mm-dd: right cick > Format cells > Number > Date > selecting 'yyyy-mm-dd' format > Ok. And save te file.
 Since the file is too large to load into mysql, its better to use "load data infile" command
 loading 'IPL_matches.csv'.
-```LOAD DATA INFILE 'D:/!. Azub learning/1. Start tech internship/Task 2/IPL_matches.csv' INTO TABLE matches
+
+```
+LOAD DATA INFILE 'D:/!. Azub learning/1. Start tech internship/Task 2/IPL_matches.csv' INTO TABLE matches
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
 ESCAPED BY '\\'
@@ -88,6 +90,7 @@ IGNORE 1 LINES
 (id,city,date,player_of_match,venue,neutral_venue,team1,team2,toss_winner,toss_decision,winner,result,result_margin,eliminator,method,umpire1,umpire2)
 ;
 ```
+
 The variable `secure_file_priv` is used to limit the effect of data import and export operations. 
 To see the current folder for upload, Just execute the below command after login in to your MySQL command line.
 ` SHOW VARIABLES LIKE "secure_file_priv";`
