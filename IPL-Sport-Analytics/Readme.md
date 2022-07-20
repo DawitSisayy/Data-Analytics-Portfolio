@@ -51,7 +51,7 @@ Then start using the database created to perform the SQL queries:
 		
 2. Create a table named ‘deliveries’ with appropriate data types for columns
       
-	 CREATE TABLE deliveries (
+	 ```CREATE TABLE deliveries (
 		`id` INT,
 		`inning` INT,
 		`over` INT,
@@ -70,4 +70,4 @@ Then start using the database created to perform the SQL queries:
 		`batting_team` VARCHAR(40),
 		`bowling_team` VARCHAR(40),
 		 FOREIGN KEY(id) REFERENCES matches(id)
-	);
+	);```
